@@ -4,7 +4,7 @@ body {
     font-weight: lighter;
     font-size: 9px; 
 //    padding: 200px;
-//    text-align: center;
+    text-align: center;
 }
 
 div.containerD {
@@ -14,10 +14,9 @@ div.containerD {
 
 div.containerD p {
   margin: 0;
-  background: yellow;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%) 
+  transform: translate(-50%, -50%); 
 }
