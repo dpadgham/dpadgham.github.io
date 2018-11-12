@@ -3,7 +3,6 @@ body {
     font-family: "Georgia", Times, serif;
     font-weight: normal;
     font-size: 9px; 
-//    padding: 200px;
     text-align: center;
 }
 
@@ -13,6 +12,6 @@ body {
     height: 50px;
     top: 50%;
     left: 50%;
-    margin-left: -50px; 
+    margin-left: -25px; 
     margin-top: -25px; 
 }​
