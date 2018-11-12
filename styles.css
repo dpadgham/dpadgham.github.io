@@ -8,10 +8,10 @@ body {
 
 .center {
     position: absolute;
-    width: 300px;
+//    width: 300px;
     height: 50px;
     top: 50%;
     left: 50%;
-//    margin-left: -25px; 
+    margin-left: -25px; 
     margin-top: -25px; 
 }​
