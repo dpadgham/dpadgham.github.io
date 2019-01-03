@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TimelineJS Example</title>
+    <meta charset="utf-8">
+    <meta name="description" content="TimelineJS Embed">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- CSS-->
+    <!--
+    <link rel="stylesheet" href="css/timeline.css?v1">
+    -->
+    <link rel="stylesheet" href="css/timelineCustom.css">
+    <!--FONT-->
+    <!--
+    <link rel="stylesheet" href="css/fonts/font.default.css?v1">
+    -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bevan%7CPontano+Sans&amp;amp;subset=latin,latin">
+    <!-- Style-->
+    <style>
+      html, body {
+      	height:100%;
+      	width:100%;
+      	padding: 0px;
+      	margin: 0px;
+      }
+      .tl-timeline {
+      	
+      }
+      
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML elements-->
+    <!--if lt IE 9
+    script(src='https://html5shim.googlecode.com/svn/trunk/html5.js')
+    
+    -->
+    <!--
+    https://docs.google.com/spreadsheets/d/1OZYR5LowgjBr7h9jqBNog0vze8fMO3_28jzN54IBy4M/pubhtml?gid=0&single=true
+    
+    -->
+  </head>
+  <body>
+    <div id="timeline"></div>
+    <!-- JavaScript-->
+    <script src="js/timeline.js"></script>
+    <script>
+      var timeline = new TL.Timeline('timeline', 'https://docs.google.com/spreadsheets/d/1OZYR5LowgjBr7h9jqBNog0vze8fMO3_28jzN54IBy4M/pubhtml?gid=0&single=true', {
+
+      	//theme_color:               "#288EC3",
+      	ga_property_id:            "UA-27829802-4",
+      	is_embed:					true,
+        //script_path:                "",
+        //height:                     this._el.container.offsetHeight,
+        //width:                      this._el.container.offsetWidth,
+        scale_factor:               10,              // How many screen widths wide should the timeline be
+        layout:                     "landscape",    // portrait or landscape
+        timenav_position:           "bottom",       // timeline on top or bottom
+        optimal_tick_width:         100,            // optimal distance (in pixels) between ticks on axis
+        //base_class:                 "",
+        timenav_height:             250,
+        //timenav_height_percentage:  25,             // Overrides timenav height as a percentage of the screen
+        timenav_height_min:         250,            // Minimum timenav height
+        marker_height_min:          60,             // Minimum Marker Height
+        marker_width_min:           100,            // Minimum Marker Width
+        marker_padding:             5,              // Top Bottom Marker Padding
+        start_at_slide:             0,
+        //menubar_height:             0,
+        //skinny_size:                650,
+        relative_date:              false,          // Use momentjs to show a relative date from the slide.text.date.created_time field
+        use_bc:                     false,          // Use declared suffix on dates earlier than 0
+        // animation
+        //duration:                   1000,
+        //ease:                       TL.Ease.easeInOutQuint,
+        // interaction
+        dragging:                   true,
+        trackResize:                true,
+        map_type:                   "stamen:toner-lite",
+        slide_padding_lr:           100,            // padding on slide of slide
+        slide_default_fade:         "0%",           // landscape fade
+
+        //api_key_flickr:             "",             // Flickr API Key
+        language:                   "en" 
+      });
+    </script>
+  </body>
+</html>
